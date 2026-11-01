@@ -44,63 +44,19 @@ I'm keeping it simple:
 - pytest for testing
 - Streamlit for the dashboard (starting with CLI/logging first)
 
-## Development Plan
+## Todo
 
-### Phase 1: Research (Done)
-I started by reviewing what's already out there - things like FIDES, PAuth, and IBAC. Figured out where the gaps are and what's actually novel about combining provenance tracking with intent-based authorization. Also defined the threat model and what I'm actually trying to test.
-
-### Phase 2: Architecture (Done)
-Designed the component architecture, defined the data structures, and documented the threat model and security boundaries. Created the project structure and initial documentation.
-
-### Phase 3: MVP Implementation
-Building the synthetic environment with sample emails and files, implementing a simple agent with tool calling, and adding the authorization engine with intent parsing. Writing tests as I go.
-
-### Phase 4: Provenance Tracking
-Building the provenance graph with NetworkX, figuring out how labels should propagate through operations, and testing multi-step workflows.
-
-### Phase 5: Testing Against Attacks
-Creating a benchmark with about 50 test cases (mix of benign and adversarial), running the different configurations, and seeing what actually gets blocked.
-
-### Phase 6: AI-Assisted Analysis (Maybe)
-If the deterministic enforcement works well, I might add a lightweight ML model to help flag suspicious actions. But only if it actually adds value.
-
-### Phase 7: Dashboard and Deployment
-Building a simple dashboard to visualize what's happening, adding proper logging, and maybe containerizing it.
-
-### Phase 8: Wrap Up
-Writing up the technical report, documenting everything, making sure experiments are reproducible, and figuring out what worked and what didn't.
-
-## Project Structure
-
-```
-trusttrace-ai/
-├── app/
-│   ├── agent/           # Agent simulator
-│   ├── provenance/      # Provenance tracking engine
-│   ├── authorization/   # Authorization engine
-│   ├── risk_analysis/   # AI-assisted risk analysis (optional)
-│   ├── tools/           # Tool implementations
-│   ├── api/             # FastAPI endpoints
-│   └── dashboard/       # Streamlit dashboard
-├── policies/            # Authorization policies
-├── data/
-│   ├── synthetic/        # Synthetic test data
-│   └── benchmark/       # Benchmark test cases
-├── experiments/         # Experiment scripts and results
-├── tests/
-│   ├── unit/            # Unit tests
-│   ├── integration/     # Integration tests
-│   └── adversarial/     # Adversarial test cases
-├── docs/
-│   ├── architecture.md  # Architecture documentation
-│   ├── threat_model.md  # Threat model documentation
-│   └── research_design.md # Research design documentation
-├── scripts/             # Utility scripts
-├── Dockerfile           # Docker configuration (optional)
-├── requirements.txt     # Python dependencies
-├── pyproject.toml      # Project configuration (optional)
-└── README.md           # This file
-```
+- [x] Research existing work on prompt injection and AI agent security
+- [x] Design component architecture and data structures
+- [ ] Build synthetic environment with sample emails and files
+- [ ] Implement simple agent with tool calling
+- [ ] Add authorization engine with intent parsing
+- [ ] Build provenance graph with NetworkX
+- [ ] Implement label propagation rules
+- [ ] Create benchmark with test cases
+- [ ] Run experiments and collect results
+- [ ] Add dashboard for visualization
+- [ ] Write up technical report
 
 ## Security Model
 
