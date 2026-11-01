@@ -1,0 +1,35 @@
+# Core dependencies
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# Agent and LLM
+openai==1.10.0
+python-dotenv==1.0.0
+
+# Data processing
+pandas==2.2.0
+numpy==1.26.3
+
+# Provenance graph
+networkx==3.2.1
+
+# Database
+sqlalchemy==2.0.25
+
+# Testing
+pytest==8.0.0
+pytest-asyncio==0.23.4
+pytest-cov==4.1.0
+
+# Optional: Machine learning
+# scikit-learn==1.4.0
+
+# Optional: Dashboard
+# streamlit==1.31.0
+
+# Development
+black==24.1.1
+isort==5.13.2
+mypy==1.8.0
