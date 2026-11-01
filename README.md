@@ -99,44 +99,12 @@ I'm testing four different setups:
 3. Intent-based authorization only
 4. The full TrustTrace system (intent + provenance)
 
-## Getting Started
-
-```bash
-# Clone the repo
-git clone <repository-url>
-cd trusttrace-ai
-
-# Set up a virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-## Running It
-
-```bash
-# Run the agent simulator
-python -m app.agent.main
-
-# Run the benchmark evaluation
-python -m experiments.run_benchmark
-
-# Run tests
-pytest tests/
-
-# Start the dashboard (when I get around to implementing it)
-streamlit run app/dashboard/main.py
-```
 
 ## Contributing
 
 This is a research project, so contributions should align with the research goals and keep experiments reproducible. That said, if you have ideas or find bugs, feel free to open an issue or PR.
 
-## License
 
-To be determined - I'll figure this out as the project matures.
 
 ## Acknowledgments
 
